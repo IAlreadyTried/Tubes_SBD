@@ -1,0 +1,9 @@
+.baris-row  {
+    height: 50px;
+}
+
+.bungkus-kiri-atas {
+    background-image:url("/img/kereta-cepat.jpg");
+    background-size: cover;
+    background-position: 50px -140px;
+}
