@@ -76,6 +76,8 @@
             </div>
         @yield('container-1')
         </div>
+        <div class="col-md-2 col-lg-2 offset-md-7 offset-lg-7 " style="background-color:rgb(247, 153, 153);height:5000px;padding:0px;min-width:110px;">
+        </div>
     </div>
         {{-- <div class="row">
             <div class="col-3" style="background-color:rgb(247, 153, 153);height:5000px;">
