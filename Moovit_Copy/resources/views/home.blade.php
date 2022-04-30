@@ -6,3 +6,10 @@
         </div>
     </div>
 @endsection
+@section('container-2')
+    <div class="row navbar-kanan-atas">
+        <div class="col-3 align-self-center">
+            <img id="panah-kanan" onclick="geserKanan()" style="width: 13px;margin-bottom:5px;margin-left:7px;transition:0.3s;" src="img/panahKanan.png" alt="">
+        </div>
+    </div>
+@endsection
