@@ -79,9 +79,9 @@
         <div class="col-md-7 col-lg-7 container">
           <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100px;}</style></div></div><div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="1077" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:1077px;width:1080px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:700px;}</style></div></div>
         </div>
-        <div class="col-md-2 col-lg-2 offset-md-7 offset-lg-7" style="height:5000px;padding:0px;min-width:179.988px;position:fixed;right:0px;">
+        <div class="col-md-2 col-lg-2" style="height:5000px;padding:0px;min-width:179.988px;position:fixed;right:0px;">
           <div id="navbar-kanan" class="col-md-9 col-lg-9 offset-md-3 offset-lg-3 " style="background-color:rgb(255, 255, 255);height:5000px;padding:0px;min-width:110px;padding-left:12px;box-shadow:-.5px 0px 7px 0px rgb(93, 93, 93);transition:0.3s;">
-          @yield('container-2')
+            @yield('container-2')
           </div>
         </div>
     </div>
