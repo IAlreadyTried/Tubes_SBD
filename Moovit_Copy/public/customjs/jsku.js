@@ -17,3 +17,13 @@ function geserKanan() {
 
     }
 }
+
+window.addEventListener("resize", function() {
+    let mauhilang = this.document.getElementById("mau-dihilangkan-kiri");
+    let navbarKanan = document.getElementById("navbar-kanan");
+    if (window.matchMedia("(max-width: 575px)").matches) {
+      mauhilang.style.display = "none";
+    } else {
+        mauhilang.style.display = "block";
+    }
+  })

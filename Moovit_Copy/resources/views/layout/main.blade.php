@@ -46,9 +46,9 @@
           </div>
         </div>
       </nav> --}}
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="background-color:rgb(247, 153, 153);height:5000px;padding:0px;min-width:307px;">
+    <div class="container-fluid" style="height:100%;">
+      <div class="row" style="height:100%;">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="background-color:rgb(255, 255, 255);height:100%;padding:0px;min-width:307px;z-index:1;box-shadow:0px 0px 5px 0px rgb(126, 126, 126);">
             <div id="gambar-kiri-atas" style="" class="bungkus-kiri-atas">
                 <div style="" class="row baris-row">
                     <div style="text-align: center;color:rgb(237, 237, 237);width:175px;padding:0px;" class="col-5 align-self-end">
@@ -76,10 +76,10 @@
             </div>
         @yield('container-1')
         </div>
-        <div class="col-md-7 col-lg-7 container">
+        <div class="col-md-7 col-lg-7 col-sm-7 hidden-xs container" style="background-color:blueviolet;margin:0px;padding:0px;">
           <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100px;}</style></div></div><div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="1077" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:1077px;width:1080px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:700px;}</style></div></div>
         </div>
-        <div class="col-md-2 col-lg-2" style="height:5000px;padding:0px;min-width:179.988px;position:fixed;right:0px;">
+        <div class="col-md-2 col-lg-2 col-sm-2 hidden-xs" style="height:5000px;padding:0px;min-width:179.988px;position:fixed;right:0px;">
           <div id="navbar-kanan" class="col-md-9 col-lg-9 offset-md-3 offset-lg-3 " style="background-color:rgb(255, 255, 255);height:5000px;padding:0px;min-width:110px;padding-left:12px;box-shadow:-.5px 0px 7px 0px rgb(93, 93, 93);transition:0.3s;">
             @yield('container-2')
           </div>

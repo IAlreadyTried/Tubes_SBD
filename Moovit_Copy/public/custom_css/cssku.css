@@ -1,3 +1,7 @@
+html,body    {
+    height: 100%;
+}
+
 .baris-row  {
     height: 52px;
 }
@@ -29,4 +33,11 @@
 
 body {
     overflow:hidden;
+}
+
+.bagian-kiri h1 {
+    padding:0px !important;
+}
+.bagian-kiri {
+    margin: 0px;
 }
