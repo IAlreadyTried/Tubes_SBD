@@ -35,10 +35,26 @@
             <img id="panah-kanan" onclick="geserKanan()" style="width: 13px;margin-bottom:5px;margin-left:7px;transition:0.3s;" src="img/panahKanan.png" alt="">
         </div>
     </div>
-    <div style="background-color:blueviolet;height:10.5%;" class="row">
-        <h1>Hello, World!</h1>
+    <div style="background-color:rgb(234, 232, 232);height:3%;" class="row">
+        <hr>
+        <h5>About Moovit</h5>
+        <p>Mobility as a Service products for Cities & Transit Agencies</p>
+        <hr> 
     </div>
-    <div style="box-shadow: 1px 0px 7px 1px rgb(139, 139, 139);height:35px" class="row align-items-center">
+    <div style="background-color:rgb(234, 232, 232);height:2%;" class="row">
+        <h5>News & Press</h5>
+        <p>In the News, Press Releases, Case Studies</p>
+        <hr>
+    </div>
+    <div style="background-color:rgb(234, 232, 232);height:2.5%;" class="row">
+        <h5>Community</h5>
+        <p>Mapping the World of Transportation Together</p>
+        <hr>
+    </div>
+    <div style="background-color:rgb(234, 232, 232);height:1%;" class="row">
+        <h5>App Support</h5>
+    </div>
+    <div style="box-shadow: 1px 0px 7px 1px rgb(139, 139, 139);height:40px" class="row align-items-center">
         <h5 style="font-size: 13px;margin-top:7px;">Show more</h5>
     </div>
 @endsection
