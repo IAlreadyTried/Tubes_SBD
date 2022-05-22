@@ -37,22 +37,22 @@
     </div>
     <div style="background-color:rgb(234, 232, 232);height:3%;" class="row">
         <hr>
-        <h5>About Moovit</h5>
+        <h5> <a href="/about"> About Moovit</a> </h5>
         <p>Mobility as a Service products for Cities & Transit Agencies</p>
         <hr> 
     </div>
     <div style="background-color:rgb(234, 232, 232);height:2%;" class="row">
-        <h5>News & Press</h5>
+        <h5><a href="/newspress">News & Press</a></h5>
         <p>In the News, Press Releases, Case Studies</p>
         <hr>
     </div>
     <div style="background-color:rgb(234, 232, 232);height:2.5%;" class="row">
-        <h5>Community</h5>
+        <h5> <a href="#">Community</a></h5>
         <p>Mapping the World of Transportation Together</p>
         <hr>
     </div>
     <div style="background-color:rgb(234, 232, 232);height:1%;" class="row">
-        <h5>App Support</h5>
+        <h5><a href="#">App Support</a></h5>
     </div>
     <div style="box-shadow: 1px 0px 7px 1px rgb(139, 139, 139);height:40px" class="row align-items-center">
         <h5 style="font-size: 13px;margin-top:7px;">Show more</h5>

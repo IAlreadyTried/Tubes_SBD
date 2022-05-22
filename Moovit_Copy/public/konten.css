@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&display=swap');
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/header-newsroom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+}
+
+.section .container {
+    height: 500px;
+    width: 1600px;
+    margin-top: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    position: relative;
+
+}
+
+.section .container .oren {
+    background-color: rgba(247,162,12,255); 
+    height:40px; 
+    width: 1140px;
+    border-top-right-radius: 8%;
+    border-top-left-radius: 6%;
+    margin-left: -12px;
+
+}
+.card-body{
+    background-color: rgba(236,240,241,255);
+}
+.section .container .postingan  {
+    margin-left: 80px;
+}
+
+.section .container .left-side .brand {
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    letter-spacing: 1px;
+}
+
+
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .container .mytitle{
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+
+
+@media (max-width:750px) {
+    .section .container {
+        max-width: 350px;
+    }
+
+    .section .container .right-side {
+        display: none;
+    }
+
+    .section .container .left-side {
+        width: 100%;
+    }
+}
