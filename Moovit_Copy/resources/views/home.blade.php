@@ -1,9 +1,9 @@
 @extends('layout.main')
 @section('container-1')
-<div class="container-fluid" style="padding:0px;position: relative;">
-    <div style="margin: 0px; height:130px;color:#292a30;padding:0px;" class="container row bg-dark">
-        <div class="col-2" style="background-color:aqua;">
-            <h2>keren</h2>
+<div class="container-fluid" style="padding:0px;position: relative;background-color:#292a30;">
+    <div style="margin: 0px; height:130px;background-color:#292a30;padding:0px;" class="container align-items-center row">
+        <div class="col-2 align-items-center justify-content-center" style="background-color:#292a30;padding:0px;">
+            <img src="img/destinasi.jpg" alt="">
         </div>
     </div>
     <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px">
