@@ -72,7 +72,7 @@
             <h5 style="padding:0px;"> <a href="/community">Community</a> </h5>
             <p style="padding:0px;">Mapping the World of Transportation Together</p>
         </div>
-        <a class="link-halaman-pertama" style="width: 100%;height:100%;display:block;position:absolute;" href="#"></a>
+        <a class="link-halaman-pertama" style="width: 100%;height:100%;display:block;position:absolute;" href="community"></a>
         {{-- <div id="halaman-pertama" style="width: 0px;height:0px;position:absolute;top:0px;left:0px;background-color:salmon;"></div> --}}
     </div>
     <div style="background-color:rgb(234, 232, 232);position: relative;" class="row">
