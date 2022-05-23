@@ -128,9 +128,9 @@
 		    </section>
 		    
 		    <section id="section5">
-		        <div class="container mt-5 text-center">
+		        <div class="container mt-5">
 		        	<div class="row">
-		        		<div class="col-sm-12">
+		        		<div class="col-sm-12" style="text-align: center">
 		        			<h3>Why join the Mooviter Community?</h3>
 		       			</div>
 					</div>
