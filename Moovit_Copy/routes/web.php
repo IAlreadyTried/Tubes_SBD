@@ -31,3 +31,6 @@ Route::get('/about', function () {
 Route::get('/newspress', function () {
     return view('newspress');
 });
+Route::get('/community', function () {
+    return view('community');
+});
