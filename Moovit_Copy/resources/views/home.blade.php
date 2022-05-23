@@ -69,7 +69,7 @@
         <hr>
         <div class="pilihan-halaman" style="padding-left:20px;padding-top:12.5px;">
             <div style="width: 25px;height:5px;position:absolute;top:25px;left:20px;background-color:#f7a20c;border-radius:5px;"></div>
-            <h5 style="padding:0px;"> <a href="/about">Community</a> </h5>
+            <h5 style="padding:0px;"> <a href="/community">Community</a> </h5>
             <p style="padding:0px;">Mapping the World of Transportation Together</p>
         </div>
         <a class="link-halaman-pertama" style="width: 100%;height:100%;display:block;position:absolute;" href="#"></a>
