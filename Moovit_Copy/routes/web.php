@@ -35,6 +35,10 @@ Route::get('/newspress', function () {
 Route::get('/community', function () {
     return view('community');
 });
+Route::get('/appsuport', function () {
+    return view('appsuport');
+});
 
 Route::get('/', [StasiunController::class, 'Data']);
 Route::get('/testing', [StasiunController::class, 'Data']);
+
