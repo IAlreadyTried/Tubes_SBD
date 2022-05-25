@@ -90,7 +90,9 @@
             </div>
         </div> --}}
     </div>
+<script src="bootstrap/js/jquery-3.6.0.min.js"></script>
 <script src="customjs/jsku.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="customjs/jsajax.js"></script>
 </body>
 </html>

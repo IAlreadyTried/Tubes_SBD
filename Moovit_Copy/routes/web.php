@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StasiunController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -34,3 +35,6 @@ Route::get('/newspress', function () {
 Route::get('/community', function () {
     return view('community');
 });
+
+Route::get('/', [StasiunController::class, 'Data']);
+Route::get('/testing', [StasiunController::class, 'Data']);

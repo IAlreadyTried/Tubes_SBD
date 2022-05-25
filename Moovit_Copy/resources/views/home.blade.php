@@ -9,7 +9,7 @@
             <form action="/home" method="POST">
                 <div style="display:block;width:92.5%;background-color:white;height:34px;margin-bottom:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
                     <span style="font-size:12px;font-weight:bold;width:50px;">Start</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="" placeholder="Choose starting point">
+                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Awal" placeholder="Choose starting point">
                 </div>
                 <div style="display:block;width:92.5%;background-color:white;height:34px;margin-top:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
                     <span style="font-size:12px;font-weight:bold;width:50px;">End</span>
@@ -18,23 +18,26 @@
             </form>
         </div>
     </div>
-    <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px">
-        <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
-    </div>
-    <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
-        <h5 style="color: #a1a1a1">No recent search...</h5>
-    </div>
-    <div id="mau-dihilangkan-kiri" class="row align-self-end bagian-kiri" style="background-color:#e5f8fe;position:sticky;bottom:0px;padding:0px;height:70px;width:100%;box-shadow:inset 0px 0px 3px 0px rgb(87, 87, 87);overflow:hidden">
-        <div class="col-9">
-            <span class="row" style="margin-top: 10px;">
-                <h5 style="font-size: 15px">Improve public transit information for your city</h5>
-            </span>
-            <span class="row" style="margin-top: -5px;">
-                <h5 style="font-size:13.5px">Join the Mooviter Community</h5>
-            </span>
+    <div style="padding: 0px" id="pilihan"></div>
+    <div id="recent">
+        <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px">
+            <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
         </div>
-        <div class="col-2 offset-1" style="position:relative;">
-            <img style="position: absolute;top:-10px;right:-20px;" src="img/moovit_globe.png" alt="">
+        <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
+            <h5 style="color: #a1a1a1">No recent search...</h5>
+        </div>
+        <div id="mau-dihilangkan-kiri" class="row align-self-end bagian-kiri" style="background-color:#e5f8fe;position:sticky;bottom:0px;padding:0px;height:70px;width:100%;box-shadow:inset 0px 0px 3px 0px rgb(87, 87, 87);overflow:hidden">
+            <div class="col-9">
+                <span class="row" style="margin-top: 10px;">
+                    <h5 style="font-size: 15px">Improve public transit information for your city</h5>
+                </span>
+                <span class="row" style="margin-top: -5px;">
+                    <h5 style="font-size:13.5px">Join the Mooviter Community</h5>
+                </span>
+            </div>
+            <div class="col-2 offset-1" style="position:relative;">
+                <img style="position: absolute;top:-10px;right:-20px;" src="img/moovit_globe.png" alt="">
+            </div>
         </div>
     </div>
 </div>

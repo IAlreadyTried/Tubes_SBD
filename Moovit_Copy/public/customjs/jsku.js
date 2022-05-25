@@ -5,6 +5,7 @@
 //     divnya.style.backgroundSize = "cover";
 // }
 
+
 function geserKanan() {
     let divNya = document.getElementById("navbar-kanan");
     let panahnya = document.getElementById("panah-kanan");
@@ -14,6 +15,7 @@ function geserKanan() {
         petanya.style.transition = "0.25s";
         petanya.style.width = "122%";
         panahnya.style.transform = "rotate(-180deg)";
+        // window.history.pushState('', 'New Page Title', '/testing');
     } else {
         divNya.style.marginLeft = "63.987px";
         panahnya.style.transform = "rotate(0deg)";
@@ -32,3 +34,4 @@ window.addEventListener("resize", function() {
         mauhilang.style.display = "block";
     }
   })
+
