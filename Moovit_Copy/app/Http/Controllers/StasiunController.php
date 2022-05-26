@@ -12,4 +12,5 @@ class StasiunController extends Controller
             'datanya' => Stasiun::all()
         ]);
     }
+
 }

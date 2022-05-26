@@ -13,7 +13,7 @@
                 </div>
                 <div style="display:block;width:92.5%;background-color:white;height:34px;margin-top:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
                     <span style="font-size:12px;font-weight:bold;width:50px;">End</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="" placeholder="Choose destination">
+                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Akhir" placeholder="Choose destination">
                 </div>
             </form>
         </div>

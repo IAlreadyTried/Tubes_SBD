@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('stasiuns', function (Blueprint $table) {
             $table->id();
             $table->string("nama");
+            $table->string("peran");
+            $table->string("namajalan");
+            $table->string("namakota");
+            $table->string('lokasi');
             $table->timestamps();
         });
     }

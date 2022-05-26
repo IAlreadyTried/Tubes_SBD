@@ -1,3 +1,11 @@
+@php
+    if(isset($_GET['lokasi'])) {
+        $lokasinya = $_GET['lokasi'];
+    } else {
+        $lokasinya = "src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86698.54390503271!2d98.67868151665947!3d3.5884505105432827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1652979364763!5m2!1sid!2sid' width='107%' height='100%' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'";
+    }
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +87,7 @@
         @yield('container-1')
         </div>
         <div class="col-md-7 col-lg-7 col-sm-7 hidden-xs container" style="background-color:#ff6a00;margin:0px;padding:0px;z-index:10;">
-          <iframe id="petaku" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86698.54390503271!2d98.67868151665947!3d3.5884505105432827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1652979364763!5m2!1sid!2sid" width="107%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe id="petaku" <?php echo $lokasinya; ?> width="107%" height="100%"></iframe>
         </div>
         <div class="col-md-2 col-lg-2 col-sm-2 hidden-xs" style="height:5000px;padding:0px;min-width:179.988px;position:fixed;right:0px;">
           <div id="navbar-kanan" class="col-md-9 col-lg-9 offset-md-3 offset-lg-3 " style="background-color:rgb(255, 255, 255);height:5000px;padding:0px;min-width:110px;padding-left:12px;box-shadow:-.5px 0px 7px 0px rgb(93, 93, 93);transition:0.3s;z-index:-5;">
