@@ -4,6 +4,9 @@
     } else {
         $lokasinya = "src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86698.54390503271!2d98.67868151665947!3d3.5884505105432827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1652979364763!5m2!1sid!2sid' width='107%' height='100%' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'";
     }
+
+
+
 @endphp
 
 <!DOCTYPE html>

@@ -42,3 +42,4 @@ Route::get('/inilines', function () {
 Route::get('/', [StasiunController::class, 'Data']);
 Route::get('/testing', [StasiunController::class, 'Data']);
 
+
