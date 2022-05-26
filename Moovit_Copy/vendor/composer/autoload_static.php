@@ -525,6 +525,7 @@ class ComposerStaticInitdcc9c706cbd8557814b41ccb76a80f17
         'App\\Models\\Kendaraan' => __DIR__ . '/../..' . '/app/Models/Kendaraan.php',
         'App\\Models\\Kota' => __DIR__ . '/../..' . '/app/Models/Kota.php',
         'App\\Models\\Line' => __DIR__ . '/../..' . '/app/Models/Line.php',
+        'App\\Models\\Location' => __DIR__ . '/../..' . '/app/Models/Location.php',
         'App\\Models\\Pengguna' => __DIR__ . '/../..' . '/app/Models/Pengguna.php',
         'App\\Models\\Stasiun' => __DIR__ . '/../..' . '/app/Models/Stasiun.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

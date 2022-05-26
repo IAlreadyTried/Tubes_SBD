@@ -26,6 +26,7 @@ return array(
     'App\\Models\\Kendaraan' => $baseDir . '/app/Models/Kendaraan.php',
     'App\\Models\\Kota' => $baseDir . '/app/Models/Kota.php',
     'App\\Models\\Line' => $baseDir . '/app/Models/Line.php',
+    'App\\Models\\Location' => $baseDir . '/app/Models/Location.php',
     'App\\Models\\Pengguna' => $baseDir . '/app/Models/Pengguna.php',
     'App\\Models\\Stasiun' => $baseDir . '/app/Models/Stasiun.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
