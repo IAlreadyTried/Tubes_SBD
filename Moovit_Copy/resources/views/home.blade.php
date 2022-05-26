@@ -26,6 +26,8 @@
         <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
             <h5 style="color: #a1a1a1">No recent search...</h5>
         </div>
+        {{--  --}}
+        {{--  --}}
         <div id="mau-dihilangkan-kiri" class="row align-self-end bagian-kiri" style="background-color:#e5f8fe;position:sticky;bottom:0px;padding:0px;height:70px;width:100%;box-shadow:inset 0px 0px 3px 0px rgb(87, 87, 87);overflow:hidden">
             <div class="col-9">
                 <span class="row" style="margin-top: 10px;">

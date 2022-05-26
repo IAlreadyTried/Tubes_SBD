@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../public/fontawesome/css/all.min.css" />
-    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style1.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="icon" type="image/x-icon" href="/img/moovit_logo2.png">
 </head>
 <body>
     <table class="header" align="center" >
       <tr>
         <td width ="1030px" > 
-        <img class="gambar1" src="logo.png" alt="" width="107px">
+        <img class="gambar1" src="img/logonya1.png" alt="" width="107px">
         </td>
         <td >
         <a href="" class="submit1" >Submit a request</a>
@@ -39,7 +40,7 @@
         </tr> 
       </table>
 
-    <div class="container">
+    <div style="padding-left: 100px;" class="container">
    <div class="title"><p style= "font-size:32px;padding-top: 34px; padding-bottom: 6px;" > Submit a request</p></div>
         <form action="#">
              <div class="user-details" >

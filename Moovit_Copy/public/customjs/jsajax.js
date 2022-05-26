@@ -9,7 +9,7 @@ inputan.addEventListener('keyup', function() {
      pilihan.innerHTML = this.responseText;
     }
   };
-  xhr.open('GET', 'ajax/pilihannya.php?kunci=' + inputan.value, true);
+  xhr.open('GET', 'ajax/pilihannya.blade.php?kunci=' + inputan.value, true);
   xhr.send();
 })
 
