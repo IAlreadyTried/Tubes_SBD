@@ -69,7 +69,7 @@
                         <a style="text-decoration: none;" href="/"><h5 class="nav-active">DIRECTIONS</h5></a>
                     </div>
                     <div style="padding-right:5px" class="col-3 align-self-end link-sidebar-kiri">
-                        <a href="/lines"><h5>LINES</h5></a>
+                        <a href="/iniline"><h5>LINES</h5></a>
                     </div>
                     <div style="width: 60px" class="col-3 align-self-end link-sidebar-kiri">
                         <a href="/alerts"><h5>ALERTS</h5></a>
