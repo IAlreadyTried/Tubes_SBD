@@ -1,0 +1,114 @@
+body{
+    background: none;
+}
+
+.header{
+    width: 1183px;
+    height: 67px;
+    padding-bottom: 8px;
+}
+.gambar1{
+    margin-bottom: 1px;
+    margin-left: 11px;
+}
+.submit1{
+    margin-left: 15px;
+    margin-top: 40px;
+    color : rgb(0, 68, 255) ;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration:none;
+}
+.container-divider {
+    border-top: 1px solid #ddd; 
+    
+    margin-top: 4px;
+}
+.isi{
+    height: 30px ;
+    width:1160px;
+    margin-top: 18px;
+}
+a{
+    color : rgb(0, 68, 255) ;
+    font-family: sans-serif; 
+    font-size: small;
+    text-decoration:none;
+    
+}
+.form{
+    position: relative;
+}
+
+.form .fa-search{
+    position: absolute;
+    top:15px;
+    left: 15px;
+    color: #bbc2ce;
+}
+
+.form-input{
+    height: 42px;
+    background-color:transparent;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    padding:8px 15px;
+    border-radius: 40px ;
+    transition:background-color .1s ease-in-out;
+    border: 2px solid #f2f2f2;
+    font: bold 10px ;
+    font-family: sans-serif;font-size: 14px;
+    text-indent: 26px;
+    color: #6A6F75;
+    transition: all 0.7s ease 0s;
+}
+.container{
+    margin-left: 80px;
+    margin-top: 3px;
+    font-family: sans-serif;
+}
+
+.kotak-input{
+    height : 40px;
+    border-radius:5px;
+    border:1px solid #d3c7c7;
+    color: #6b757e;
+    margin-bottom: 20px;
+    width:650px;
+}
+
+.input-box{
+    height : 40px;
+    border-radius:5px;
+    border:1px solid #d3c7c7;
+    margin-bottom: 20px;
+    margin-top: 7px; 
+    width:650px;
+}
+.box-area{
+    border-radius:5px;
+    border:1px solid #d3c7c7;
+    color: #6b757e;
+    margin-top: 7px; 
+    width:650px;
+}
+
+.attach{
+    display: inline-block;
+    margin-top: 3px;
+    position: relative;
+    width: 650px;
+    height: 50px;
+    border: 1px solid rgba(156, 146, 146, 0.4);
+    box-lines: 2px;
+    display: flex;
+    border-radius: 2px solid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+}
+.btn.btn-primary {
+    width: 200px;
+    margin-bottom: 30px;
+}

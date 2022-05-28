@@ -1,11 +1,3 @@
-// let divnya = document.getElementById("gambar-kiri-atas");
-// if(window.innerWidth >= 576) {
-//     divnya.style.backgroundSize = "200px";
-// }else {
-//     divnya.style.backgroundSize = "cover";
-// }
-
-
 function geserKanan() {
     let divNya = document.getElementById("navbar-kanan");
     let panahnya = document.getElementById("panah-kanan");
@@ -34,4 +26,11 @@ window.addEventListener("resize", function() {
         mauhilang.style.display = "block";
     }
   })
+
+  function keren() {
+    let loader = document.getElementById("loaderku");
+    let peta = document.getElementById("petaku");
+    loader.style.display = "none";
+    peta.style.display = "block";
+  }
 

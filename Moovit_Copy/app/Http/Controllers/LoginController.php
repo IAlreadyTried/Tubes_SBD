@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 
 
 
-
+session_start();
 class LoginController extends Controller
 {
 
@@ -38,7 +38,7 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
         if (Hash::check($request->password, $usernya->password)) {
-            $request->session()->regenerate();
+            $_SESSION["username"] = "$request->username";
             return redirect()->intended('/');
         } else {
             return back()->with('loginfail', 'Login Fail, Try again');
@@ -47,6 +47,7 @@ class LoginController extends Controller
     
     public function logoutkan(Request $request)
     {
+        session_destroy();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 

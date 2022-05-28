@@ -3,8 +3,10 @@
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
+session_start();
 
 /*
 |--------------------------------------------------------------------------
@@ -36,10 +38,26 @@ Route::get('/community', function () {
     return view('community');
 });
 Route::get('/inilines', function () {
-    return view('inilines');
+    return view('inilines', [
+        'testing' => 'oghe'
+    ]);
 });
 
-Route::get('/', [LocationController::class, 'Data']);
+Route::get('/kumpul1', function () {
+    return view('kumpul1');
+});
+Route::get('/kumpul2', function () {
+    return view('kumpul2');
+});
+
+Route::get('/appsupport', function () {
+    return view('appsuport');
+});
+Route::get('/testingdulu', function () {
+    return view('testingdulu');
+});
+
+Route::get('/', [SessionController::class, 'index']);
 Route::get('/testing', [LocationController::class, 'Data']);
 
 
@@ -50,6 +68,7 @@ Route::get('/login', [LoginController::class, 'index']);
 Route::post('/loginkan', [LoginController::class, 'loginkan']);
 
 Route::get('/logout', [LoginController::class, 'logoutkan']);
+
 
 
 

@@ -65,3 +65,24 @@ body {
 .nav-active {
     color: rgb(255, 109, 56) !important;
 }
+
+.loader {
+    border: 11px solid #ababab;
+    border-radius: 50%;
+    border-top: 11px solid #ed6c0a;
+    width: 70px;
+    height: 70px;
+    top: 40%;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#petaku {
+    min-width: 107% !important;
+    min-height: 100% !important;
+}

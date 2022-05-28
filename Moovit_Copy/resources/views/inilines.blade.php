@@ -3,28 +3,38 @@
 <div class="container-fluid" style="padding:0px;position: relative;background-color:#292a30;">
     <div style="margin: 0px; height:130px;background-color:#292a30;padding:0px;" class="container align-items-center row">
         <div class="col-2 align-items-center justify-content-center" style="background-color:#292a30;padding:0px;">
-            <img style="width: 20px;margin-left: 15px;" src="img/destinasi.jpg" alt="">
         </div>
-        <div class="col-10" style="background-color:#292a30;padding:0px;">
-            <form action="/home" method="POST">
-                <div style="display:block;width:92.5%;background-color:white;height:34px;margin-bottom:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
-                    <span style="font-size:12px;font-weight:bold;width:50px;">Start</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Awal" placeholder="Choose starting point">
+        <div class="col-6" style="background-color:#292a30;padding:0px;">
+            <form class="form-inline">
+                <div class="input-group" style="width: 225px">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><img src="https://openclipart.org/image/2400px/svg_to_png/185356/1382519138.png" alt="" width="25px"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <div style="display:block;width:92.5%;background-color:white;height:34px;margin-top:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
-                    <span style="font-size:12px;font-weight:bold;width:50px;">End</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="" placeholder="Choose destination">
-                </div>
-            </form>
+              </form>
         </div>
     </div>
     <div style="padding: 0px" id="pilihan"></div>
     <div id="recent">
         <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px">
-            <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
+            <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Temanbus Medan</h5>
+        </div>
+        <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);">
+            <div class="bullet">
+                <img style="display: inline-block" src="https://th.bing.com/th/id/R.1aa09fcd2e6add0f83b59fb1f310a154?rik=BuC%2fXTPRMETwVw&riu=http%3a%2f%2fwww.animationxpress.com%2fwp-content%2fuploads%2f2017%2f05%2fTayo-logo.jpg&ehk=89qFQr4ZfOupyWEqCSNBtX7mXh%2byVKCi8kJf%2btswCJY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" width="25px" />
+                <p style="display: inline-block">Pinang Baris - Lapangan Merdeka</p>
+            </div>
+            <div class="bullet">
+                <img style="display: inline-block" src="https://th.bing.com/th/id/R.1aa09fcd2e6add0f83b59fb1f310a154?rik=BuC%2fXTPRMETwVw&riu=http%3a%2f%2fwww.animationxpress.com%2fwp-content%2fuploads%2f2017%2f05%2fTayo-logo.jpg&ehk=89qFQr4ZfOupyWEqCSNBtX7mXh%2byVKCi8kJf%2btswCJY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" width="25px" />
+                <p style="display: inline-block">Pinang Baris - Lapangan Asyik</p>
+            </div>
+            <div class="bullet">
+                <img style="display: inline-block" src="https://th.bing.com/th/id/R.1aa09fcd2e6add0f83b59fb1f310a154?rik=BuC%2fXTPRMETwVw&riu=http%3a%2f%2fwww.animationxpress.com%2fwp-content%2fuploads%2f2017%2f05%2fTayo-logo.jpg&ehk=89qFQr4ZfOupyWEqCSNBtX7mXh%2byVKCi8kJf%2btswCJY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" width="25px" />
+                <p style="display: inline-block">Pinang Baris - Lapangan Hore</p>
+            </div>
         </div>
         <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
-            <h5 style="color: #a1a1a1">No recent search...</h5>
         </div>
         <div id="mau-dihilangkan-kiri" class="row align-self-end bagian-kiri" style="background-color:#e5f8fe;position:sticky;bottom:0px;padding:0px;height:70px;width:100%;box-shadow:inset 0px 0px 3px 0px rgb(87, 87, 87);overflow:hidden">
             <div class="col-9">

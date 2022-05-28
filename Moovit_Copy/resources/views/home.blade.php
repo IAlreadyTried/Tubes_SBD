@@ -9,6 +9,41 @@
     //     $namalokasi = "";
     // }
     // $testing = $request->session()->all();
+
+        if(isset($_GET['awal'])) {
+            $tambahan = $_GET['awal'];
+            $nama = $_SESSION['username'];
+            $conn = mysqli_connect('localhost', 'root', '', 'moovit_database');
+            $querynya = ("UPDATE penggunas SET awal= '$tambahan' WHERE username='$nama'");
+            mysqli_query($conn, $querynya);
+            $_SESSION['sudah'] = 'sudah';
+            $_SESSION['awal'] = $tambahan;
+            // header("Refresh:0");
+        }
+
+    if (isset($_SESSION['awal'])) {
+        $awal = $_SESSION['awal'];
+    }else {
+        $awal = "";
+    }
+
+        if(isset($_GET['akhir'])) {
+            $tambahan = $_GET['akhir'];
+            $nama = $_SESSION['username'];
+            $conn = mysqli_connect('localhost', 'root', '', 'moovit_database');
+            $querynya = ("UPDATE penggunas SET akhir= '$tambahan' WHERE username='$nama'");
+            mysqli_query($conn, $querynya);
+            $_SESSION['sudah2'] = 'sudah2';
+            $_SESSION['akhir'] = $tambahan;
+            // header("Refresh:0");
+        }
+    if (isset($_SESSION['akhir'])) {
+        $akhir = $_SESSION['akhir'];
+    }else {
+        $akhir = "";
+    }
+    
+    
 @endphp
 
 @extends('layout.main')
@@ -22,23 +57,38 @@
             <form action="/home" method="POST">
                 <div style="display:block;width:92.5%;background-color:white;height:34px;margin-bottom:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
                     <span style="font-size:12px;font-weight:bold;width:50px;">Start</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Awal" placeholder="Choose starting point">
+                    <input value="<?php echo $awal; ?>" style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Awal" placeholder="Choose starting point">
                 </div>
                 <div style="display:block;width:92.5%;background-color:white;height:34px;margin-top:12.5px;border-radius:5px;padding-top:3px;padding-left:10px;">
                     <span style="font-size:12px;font-weight:bold;width:50px;">End</span>
-                    <input style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Akhir" placeholder="Choose destination">
+                    <input value="<?php echo $akhir; ?>" style="float:right;width:75%;margin-right:22.5px;border:none;outline:none;font-size:15px;" type="text" name="" id="Akhir" placeholder="Choose destination">
                 </div>
             </form>
         </div>
     </div>
     <div style="padding: 0px" id="pilihan"></div>
     <div id="recent">
+        @php
+            if(isset($_SESSION['awal'])&&isset($_SESSION['akhir'])):
+        @endphp
+        <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px;display:none;">
+            <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
+        </div>
+        <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
+            <h5 style="color: #a1a1a1">keren</h5>
+        </div>
+        @php
+            else:
+        @endphp
         <div class="row align-items-center" style="background-color:rgb(239, 239, 239);margin:0px;padding:0px;height:44px">
             <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
         </div>
         <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
-            <h5 style="color: #a1a1a1">No recent search...</h5>
+            <h5 style="color: #a1a1a1">No recent locations...</h5>
         </div>
+        @php
+            endif;
+        @endphp
         <div id="mau-dihilangkan-kiri" class="row align-self-end bagian-kiri" style="background-color:#e5f8fe;position:sticky;bottom:0px;padding:0px;height:70px;width:100%;box-shadow:inset 0px 0px 3px 0px rgb(87, 87, 87);overflow:hidden">
             <div class="col-9">
                 <span class="row" style="margin-top: 10px;">
@@ -95,9 +145,9 @@
         <hr>
         <div class="pilihan-halaman" style="padding-left:20px;padding-top:25px;">
             <div style="width: 25px;height:5px;position:absolute;top:35px;left:20px;background-color:#003e54;border-radius:5px;"></div>
-            <h5 style="padding:0px;"> <a href="/about">App Support</a></h5>
+            <h5 style="padding:0px;"> <a href="/appsupport">App Support</a></h5>
         </div>
-        <a class="link-halaman-pertama" style="width: 100%;height:100%;display:block;position:absolute;" href="#"></a>
+        <a class="link-halaman-pertama" style="width: 100%;height:100%;display:block;position:absolute;" href="/appsupport"></a>
         {{-- <div id="halaman-pertama" style="width: 0px;height:0px;position:absolute;top:0px;left:0px;background-color:salmon;"></div> --}}
     </div>
     <div style="box-shadow: 1px -2px 7px 1px rgb(139, 139, 139);box-shadow: 1px 0px 7px 1px rgb(139, 139, 139);height:40px" class="row align-items-center">
