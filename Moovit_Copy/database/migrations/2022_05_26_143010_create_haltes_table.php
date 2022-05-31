@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('haltes', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_bus');
-            $table->integer('id_kendaraan');
+            $table->unsignedBigInteger('kendaraan_id');
             $table->string("nama");
+            $table->string("namajalan");
             $table->string("lokasi");
             $table->timestamps();
         });
