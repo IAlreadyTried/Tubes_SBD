@@ -76,6 +76,7 @@
         </div>
         <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
             <h5 style="color: #a1a1a1">keren</h5>
+            <h1>TIM 1</h1>
         </div>
         @php
             else:

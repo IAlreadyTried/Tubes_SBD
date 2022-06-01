@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer("id_kendaraan");
             $table->string("nama");
             $table->string("jenis_kendaraan");
+            $table->text("halte");
+            $table->text("waktu");
             $table->timestamps();
         });
     }

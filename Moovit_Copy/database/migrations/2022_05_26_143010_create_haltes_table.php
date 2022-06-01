@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('kendaraan_id');
             $table->string("nama");
             $table->string("namajalan");
-            $table->string("lokasi");
+            $table->text("lokasi");
             $table->timestamps();
         });
     }
