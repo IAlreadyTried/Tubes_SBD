@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("peran");
             $table->string("namajalan");
             $table->string("namakota");
-            $table->string('lokasi');
+            $table->text('lokasi');
             $table->timestamps();
         });
     }

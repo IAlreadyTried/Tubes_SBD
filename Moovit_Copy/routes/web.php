@@ -4,9 +4,13 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DirectionsController;
+use App\Http\Controllers\LinesController;
 use Illuminate\Support\Facades\Route;
-
-session_start();
+use App\Models\Locations;
+use App\Models\Penggunas;
+//session_start();
 
 /*
 |--------------------------------------------------------------------------
@@ -69,11 +73,9 @@ Route::post('/loginkan', [LoginController::class, 'loginkan']);
 
 Route::get('/logout', [LoginController::class, 'logoutkan']);
 
-
-
-
-
-
-
-
+Route::get('/dash', [AdminController::class, 'index'])->name('indexadmin');
+Route::get('/dash/delete{id}', [AdminController::class, 'destroy'])->name('deleteadmin');
+Route::get('/dir', [DirectionsController::class, 'index'])->name('indexlokasi');
+Route::get('/dir/delete{id}', [DirectionsController::class, 'destroy'])->name('deletelokasi');
+Route::get('/line', [LinesController::class, 'index']); //Masih PENDING
 
