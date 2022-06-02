@@ -75,8 +75,89 @@
             <h5 style="font-size: 17px;margin-top:5px;color:rgb(125, 125, 125)">Recent</h5>
         </div>
         <div class="row  bagian-kiri" style="background-color:rgb(255, 255, 255);height:500px;">
-            <h5 style="color: #a1a1a1">keren</h5>
-            <h1>TIM 1</h1>
+            <div style="height: 60px;background-color:#292a30;">
+                <h5 style="color: #cecece;display:inline-block;font-size:17px;margin-top:8px;">Set your departure time</h5>
+                <div style="display: inline-block;float:right;margin-right:13px;" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     @php
+                     if(isset($_GET['waktu'])) {
+                        echo $_GET['waktu'];
+                     } else {
+                         echo "12:00 AM";
+                     }
+                     @endphp
+                    </button>
+                
+                    <ul style="max-height: 200px;overflow-y:scroll;z-index = 100000;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        @php
+                        if(isset($_GET['lokasi'])) {
+                            $lokasinyabro = $_GET['lokasi'];
+                        
+                            for($i = 0; $i < 12; $i++) {
+                                $menit = 0;
+                                if($i == 0) {
+                                    $a = 12;
+                                } else {
+                                    $a = $i;
+                                }
+                                for ($j=0; $j < 4; $j++) { 
+                                    if($j == 0) {
+                                        $k = "00";
+                                    } else {
+                                        $k = $menit;
+                                    }
+                                    echo "<li><a class='dropdown-item' href='?lokasi=$lokasinyabro&waktu=$a:$k AM'>$a:$k AM</a></li>";
+                                    $menit += 15;
+                                }
+                            }
+                            for($i = 0; $i < 12; $i++) {
+                                $menit = 0;
+                                if($i == 0) {
+                                    $a = 12;
+                                } else {
+                                    $a = $i;
+                                }
+                                for ($j=0; $j < 4; $j++) { 
+                                    if($j == 0) {
+                                        $k = "00";
+                                    } else {
+                                        $k = $menit;
+                                    }
+                                    echo "<li><a class='dropdown-item' href='?lokasi=$lokasinyabro&waktu=$a:$k PM'>$a:$k PM</a></li>";
+                                    $menit += 15;
+                                }
+                            }
+                        }
+                        @endphp
+                    </ul>
+                </div>
+            </div>
+            <div style="height: 100%;width:100%;padding:0px;">
+                <div style="background-color:#ecf0f1;height:35px;">
+                    <p style="margin-left:10px;line-height:30px;">Suggested Routes<a href="#" style="float: right;margin-right:20px;text-decoration:none;"><img style="width:20px;margin-bottom:2px;" src="img/sharekan.png">Share</a></p>
+                </div>
+                <a style="text-decoration: none;" class="link-bus" href="#">
+                <div style="width:100%;height:111.2px;position: relative;padding:0px;margin:0px;" class="container row tampilan-bus">
+                    <div class="col-2 align-items-center">
+                        <div style="text-align:center;font-size:28px;margin-top:25px;color:black;" class="">31</div>
+                        <div style="text-align:center;margin-top:-10px;font-size:10px;color:black;" class="">MIN</div>
+                    </div>
+                    <div style="height:111.2px;padding-top:20px;padding-bottom:20px;" class="col-10 align-items-center">
+                        <div style="height: 32px;width:231px;" class="row">
+                            <div class="col-1"><img style="width: 20px;display:inline-block;float:left;margin-top:1px;" src="img/walking.svg" alt=""></div> 
+                            <div class="col-2" style="padding:0px;"><p style="display:inline-block;font-size:15px;margin-top:5px;margin-left:8px;color:black;">11</p><img style="float:right;width:10px;margin-top:12px;" src="img/panahKanan.png" alt=""></div>
+                            <div class="col-4" style="padding:0px;text-align:center;"><span style="display: inline-block;color:black;width:90%;height:32px;border-radius:5px 5px 0px 0px;border-top:2px solid rgb(210, 210, 210);border-left:2px solid rgb(210, 210, 210);border-right:2px solid rgb(210, 210, 210);"><img style="float:left;width:25px;margin-top:2px;margin-left:4px;" src="img/bus.svg" alt=""><p style="font-weight: bold;margin-top:1px;">K5M</p></span></div>
+                            <div class="col-1" style="padding:0px;"><img style="float:left;width:10px;margin-top:12px;" src="img/panahKanan.png" alt=""></div>
+                            <div class="col-2" style="padding:0px;"><img style="width: 20px;display:inline-block;float:left;margin-top:1px;" src="img/walking.svg" alt=""><p style="display:inline-block;font-size:15px;margin-top:5px;margin-left:8px;color:black;">5</p></div>
+                        </div>
+                        <div style="height: 32px;max-height:32px;" class="row">
+                            <div style="font-size:13px;color:#383838;" class="row">Leaves from Halte Simpang Waspada</div>
+                            <div style="font-size:13px;color:#383838;" class="row">9:34 AM - 10:05 AM</div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
         </div>
         @php
             else:

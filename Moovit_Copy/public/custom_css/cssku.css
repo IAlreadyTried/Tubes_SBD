@@ -82,7 +82,15 @@ body {
     100% { transform: rotate(360deg); }
   }
 
-#petaku {
+.bungkus-peta iframe {
     min-width: 107% !important;
     min-height: 100% !important;
+}
+
+.tampilan-bus {
+    transition: .3s;
+}
+
+.link-bus:hover .tampilan-bus {
+    background-color: rgba(98, 98, 98, .1) !important;
 }

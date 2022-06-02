@@ -1,7 +1,7 @@
 function geserKanan() {
     let divNya = document.getElementById("navbar-kanan");
     let panahnya = document.getElementById("panah-kanan");
-    let petanya = document.getElementById("petaku");
+    let petanya = document.querySelector(".bungkus-peta iframe");
     if(panahnya.style.transform == "rotate(0deg)") {
         divNya.style.marginLeft = "200px";
         petanya.style.transition = "0.25s";
