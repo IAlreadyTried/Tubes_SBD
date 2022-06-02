@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="custom_css/cssku.css">
     <link rel="icon" type="image/x-icon" href="/img/moovit_logo2.png">
-    <title>halo | Home</title>
+    <title>Moovit | Home</title>
 </head>
 <body onload="keren()">
 
@@ -52,7 +52,7 @@
             </div>
         @yield('container-1')
         </div>
-        <div class="col-md-7 col-lg-7 col-sm-7 hidden-xs container" style="position: relative;background-color:#ffffff;margin:0px;padding:0px;z-index:10;">
+        <div class="col-md-7 col-lg-7 col-sm-7 hidden-xs container bungkus-peta" style="position: relative;background-color:#ffffff;margin:0px;padding:0px;z-index:10;">
           <div id="loaderku" style="position:absolute;" class="loader"></div>
           <iframe style="display: none;" id="petaku" <?php echo $lokasinya; ?> width="107%" height="100%"></iframe>
         </div>
