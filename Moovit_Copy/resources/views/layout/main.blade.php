@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="custom_css/cssku.css">
     <link rel="icon" type="image/x-icon" href="/img/moovit_logo2.png">
-    <title>Moovit | Home</title>
+    <title>halo | Home</title>
 </head>
 <body onload="keren()">
 
