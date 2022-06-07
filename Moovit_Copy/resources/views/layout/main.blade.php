@@ -1,4 +1,6 @@
 @php
+    
+
     if(isset($_GET['lokasi'])) {
         $lokasinya = $_GET['lokasi'];
     } else {

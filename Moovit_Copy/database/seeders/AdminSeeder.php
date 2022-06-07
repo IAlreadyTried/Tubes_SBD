@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class AdminSeeder extends Seeder
 {
@@ -15,11 +16,11 @@ class AdminSeeder extends Seeder
     public function run()
     {
         //Kosongkan semua data di tabel users
-        \DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        \DB::table('admins')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        DB::table('admins')->truncate();
 
         //Membuat 3 user secara manual
-            \DB::table('admins')->insert([      
+            DB::table('admins')->insert([      
                 [     
                     'username'=> "abdul",
                     'password' => bcrypt('admin1'),

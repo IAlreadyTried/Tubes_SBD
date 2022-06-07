@@ -98,12 +98,6 @@
               <span class="menu-title">Directions</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="line">
-              <i class="mdi mdi-directions mdi-24px"></i> 
-              <span class="menu-title">Lines</span>
-            </a>
-          </li>
           {{-- <li class="nav-item">
             <a class="nav-link" href="al">
               <i class="mdi mdi-access-point-network mdi-24px"></i>

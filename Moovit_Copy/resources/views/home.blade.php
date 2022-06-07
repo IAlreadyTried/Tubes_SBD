@@ -9,7 +9,58 @@
     //     $namalokasi = "";
     // }
     // $testing = $request->session()->all();
+    if(isset($_GET['waktu'])) {
+        $awalnya = $_SESSION['awal'];
+        $conn = mysqli_connect('localhost', 'root', '', 'moovit_database');
+        $result = mysqli_query($conn, "SELECT namajalan FROM locations WHERE nama LIKE '%$awalnya%'" );
+        $row = mysqli_fetch_assoc($result);
+        $row = $row['namajalan'];
+        $halte =  mysqli_query($conn, "SELECT * FROM haltes WHERE namajalan = '$row'" );
+        $halteawal = mysqli_fetch_assoc($halte);
 
+        $akhirnya = $_SESSION['akhir'];
+        $result = mysqli_query($conn, "SELECT namajalan FROM locations WHERE nama LIKE '%$akhirnya%'" );
+        $row = mysqli_fetch_assoc($result);
+        $row = $row['namajalan'];
+        $halte =  mysqli_query($conn, "SELECT * FROM haltes WHERE namajalan = '$row'" );
+        $halteakhir = mysqli_fetch_assoc($halte);
+
+
+        $halteawalnya = $halteawal['nama'];
+        $halteakhirnya = $halteakhir['nama'];
+        $result = mysqli_query($conn, "SELECT * FROM kendaraans WHERE halte LIKE '%$halteawalnya%' AND halte LIKE '%$halteakhirnya%'" );
+        $row = mysqli_fetch_assoc($result);
+        $kendaraan = $row;
+
+        $halte_kendaraan = explode(";",$kendaraan['halte']);
+        $waktu_kendaraan = explode(";", $kendaraan['waktu']);
+
+        $first = array_search($halteawalnya, $halte_kendaraan);
+        $last = array_search($halteakhirnya, $halte_kendaraan);
+
+        $berangkat = array(
+            'berangkat_halte' => $halteawalnya, 
+            'berangkat_waktu' =>$waktu_kendaraan[$first],
+            'kendaraan' => $kendaraan['nama']
+        );
+        $sampai = array(
+            'sampai_halte' => $halteakhirnya, 
+            'sampai_waktu' =>$waktu_kendaraan[$last],
+            'kendaraan' => $kendaraan['nama']
+        );
+    } else {
+        $last = "0";
+        $berangkat = array(
+            'berangkat_halte' => '', 
+            'berangkat_waktu' =>'',
+            'kendaraan' => ''
+        );
+        $sampai = array(
+            'sampai_halte' => '', 
+            'sampai_waktu' =>'',
+            'kendaraan' => ''
+        );
+    }
         if(isset($_GET['awal'])) {
             $tambahan = $_GET['awal'];
             $nama = $_SESSION['username'];
@@ -136,23 +187,39 @@
                 <div style="background-color:#ecf0f1;height:35px;">
                     <p style="margin-left:10px;line-height:30px;">Suggested Routes<a href="#" style="float: right;margin-right:20px;text-decoration:none;"><img style="width:20px;margin-bottom:2px;" src="img/sharekan.png">Share</a></p>
                 </div>
+                @php
+                if(isset($_GET['waktu'])) {
+                    if($_GET['waktu']!= $berangkat['berangkat_waktu']) {
+                        $sembunyikan = "0";
+                    } else {
+                        $sembunyikan = "1";
+                    }
+                } else {
+                    $sembunyikan = "0";
+                }
+                @endphp
+                @php
+                    if($sembunyikan == "0") {
+                        echo "<h5 style='margin-left:21px;font-size:20px;margin-top:20px;'>Tidak ada rute pada jam yang dipilih</h5>";
+                    }
+                @endphp
                 <a style="text-decoration: none;" class="link-bus" href="#">
-                <div style="width:100%;height:111.2px;position: relative;padding:0px;margin:0px;" class="container row tampilan-bus">
+                <div style="opacity:<?= $sembunyikan; ?>;width:100%;height:111.2px;position: relative;padding:0px;margin:0px;" class="container row tampilan-bus">
                     <div class="col-2 align-items-center">
-                        <div style="text-align:center;font-size:28px;margin-top:25px;color:black;" class="">31</div>
+                        <div style="text-align:center;font-size:28px;margin-top:25px;color:black;" class=""><?php echo (($last * 10)+10); ?></div>
                         <div style="text-align:center;margin-top:-10px;font-size:10px;color:black;" class="">MIN</div>
                     </div>
                     <div style="height:111.2px;padding-top:20px;padding-bottom:20px;" class="col-10 align-items-center">
                         <div style="height: 32px;width:231px;" class="row">
                             <div class="col-1"><img style="width: 20px;display:inline-block;float:left;margin-top:1px;" src="img/walking.svg" alt=""></div> 
                             <div class="col-2" style="padding:0px;"><p style="display:inline-block;font-size:15px;margin-top:5px;margin-left:8px;color:black;">11</p><img style="float:right;width:10px;margin-top:12px;" src="img/panahKanan.png" alt=""></div>
-                            <div class="col-4" style="padding:0px;text-align:center;"><span style="display: inline-block;color:black;width:90%;height:32px;border-radius:5px 5px 0px 0px;border-top:2px solid rgb(210, 210, 210);border-left:2px solid rgb(210, 210, 210);border-right:2px solid rgb(210, 210, 210);"><img style="float:left;width:25px;margin-top:2px;margin-left:4px;" src="img/bus.svg" alt=""><p style="font-weight: bold;margin-top:1px;">K5M</p></span></div>
+                            <div class="col-4" style="padding:0px;text-align:center;"><span style="display: inline-block;color:black;width:90%;height:32px;border-radius:5px 5px 0px 0px;border-top:2px solid rgb(210, 210, 210);border-left:2px solid rgb(210, 210, 210);border-right:2px solid rgb(210, 210, 210);"><img style="float:left;width:25px;margin-top:2px;margin-left:4px;" src="img/bus.svg" alt=""><p style="font-weight: bold;margin-top:1px;"><?= $berangkat['kendaraan']; ?></p></span></div>
                             <div class="col-1" style="padding:0px;"><img style="float:left;width:10px;margin-top:12px;" src="img/panahKanan.png" alt=""></div>
                             <div class="col-2" style="padding:0px;"><img style="width: 20px;display:inline-block;float:left;margin-top:1px;" src="img/walking.svg" alt=""><p style="display:inline-block;font-size:15px;margin-top:5px;margin-left:8px;color:black;">5</p></div>
                         </div>
                         <div style="height: 32px;max-height:32px;" class="row">
-                            <div style="font-size:13px;color:#383838;" class="row">Leaves from Halte Simpang Waspada</div>
-                            <div style="font-size:13px;color:#383838;" class="row">9:34 AM - 10:05 AM</div>
+                            <div style="font-size:13px;color:#383838;" class="row">Leaves from <?= $berangkat['berangkat_halte'] ?>, arrive at <?= $sampai['sampai_halte']; ?> </div>
+                            <div style="font-size:13px;color:#383838;" class="row"><?= $berangkat['berangkat_waktu']; ?> - <?= $sampai['sampai_waktu']; ?></div>
                         </div>
                     </div>
                 </div>

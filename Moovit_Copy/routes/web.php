@@ -69,6 +69,8 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/registrasi', [RegisterController::class, 'registerkan']);
 
 Route::get('/login', [LoginController::class, 'index']);
+Route::get('/loginadmin', [LoginController::class, 'index1']);
+Route::post('/loginkanadmin', [LoginController::class, 'loginkanadmin']);
 Route::post('/loginkan', [LoginController::class, 'loginkan']);
 
 Route::get('/logout', [LoginController::class, 'logoutkan']);
